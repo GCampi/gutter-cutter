@@ -1,0 +1,29 @@
+{
+  "name": "GutterCutter",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Gutter Cutter",
+    "manifest": "src/manifest.json",
+    "main": "gutter_cutter.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GCampi/gutter-cutter.git"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "author": "Gabriele Campi"
+}

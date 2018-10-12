@@ -36,5 +36,5 @@
     ]
   },
   "disableCocoaScriptPreprocessor": true,
-  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+  "appcast": "https://raw.githubusercontent.com/GCampi/gutter-cutter/master/.appcast.xml"
 }
