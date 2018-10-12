@@ -1,0 +1,38 @@
+{
+  "name": "Gutter Cutter",
+  "description": "A Sketch plugin to create custom grids with guides",
+  "author": "Gabriele Campi",
+  "homepage": "https://github.com/GCampi/gutter-cutter",
+  "version": 0.1,
+  "identifier": "it.gabrielecampi.sketch.gutter-cutter",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Vertical guides",
+      "identifier": "verticalGuides",
+      "script": "./guttercutter.js",
+      "handler": "createVerticalGuides"
+    },
+    {
+      "name": "Horizontal guides",
+      "identifier": "horizontalGuides",
+      "script": "./guttercutter.js",
+      "handler": "createHorizontalGuides"
+    },
+    {
+      "name": "Remove all guides",
+      "identifier": "removeAllGuides",
+      "script": "./guttercutter.js",
+      "handler": "removeAllGuides"
+    }
+  ],
+  "menu": {
+    "title": "Gutter Cutter",
+    "items": [
+      "verticalGuides",
+      "horizontalGuides",
+      "removeAllGuides"
+    ]
+  }
+}
